@@ -1,0 +1,27 @@
+# Angular / Node
+node_modules/
+dist/
+.angular/
+.tmp/
+coverage/
+
+# IDE / Editors
+.vscode/
+.vs/
+*.suo
+*.user
+*.vsidx
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env
+.env
+.env.*

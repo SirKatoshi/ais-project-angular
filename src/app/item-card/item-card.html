@@ -1,0 +1,20 @@
+<article class="card">
+  <!-- Бейдж Популярний -->
+  <div class="badge" *ngIf="item.isPopular">Популярний</div>
+
+  <img *ngIf="item.imageUrl" [src]="item.imageUrl" [alt]="item.brand + ' ' + item.model" />
+
+  <h3>{{ item.brand }} {{ item.model }}</h3>
+  <p class="price">{{ item.price | currency:'USD':'symbol':'1.0-0' }}</p>
+
+  <ul class="specs">
+    <li><strong>Памʼять:</strong> {{ item.memory }} ГБ</li>
+    <li><strong>Оперативна памʼять:</strong> {{ item.ram }} ГБ</li>
+    <li><strong>ОС:</strong> {{ item.os }}</li>
+  </ul>
+
+  <p class="desc">{{ item.description }}</p>
+  <small class="meta">Додано: {{ item.createdAt | date:'mediumDate' }}</small>
+
+  <button (click)="select.emit(item)">Детальніше</button>
+</article>

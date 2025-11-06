@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Горизонтальне вирівнювання товарів */
+.items-row {
+  display: flex;
+  flex-wrap: wrap; /* дозволяє перенос рядків */
+  justify-content: center; /* центрує товари по горизонталі */
+  gap: 20px; /* відступ між товарами */
+}
